@@ -14,7 +14,7 @@ def get_zipcode():
         "dublin": 94532
     }
     zip_code = city_zip_code_dict[city]
-    res = requests.get("http://localhost:9000/weather?zip_code=94538")
+    res = requests.get("http://172.17.0.2:9000/weather?zip_code=94538")
     data = res.json()
     print("res", res.json())
     
